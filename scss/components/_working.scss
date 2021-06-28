@@ -32,11 +32,12 @@
 	&__item {
 		background-color: $bg_color1;
 		padding: 25px;
-		grid-template: 100px 1fr auto / 1fr;
+		grid-template: 50px 100px 1fr / 1fr;
+		border-radius: 10px;
 		
 		&-img {
 			overflow: hidden;
-			width: 100px;
+			width: 50px;
 			margin: 0 auto;
 			
 			img {
@@ -55,7 +56,8 @@
 		}
 	
 		&-text {
-			font-size: 16px;
+			font-size: 14px;
+			line-height: 120%;
 			text-align: center;
 		}
 	}
