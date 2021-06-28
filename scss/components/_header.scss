@@ -1,0 +1,187 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #ffc31e;
+		z-index: 2;
+	}
+
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+
+		&-img {
+			flex: 0 0 60px;
+			border-radius: 100%;
+			overflow: hidden;
+			position: relative;
+			z-index: 3;
+			
+			img {
+				max-width: 100%;
+				display: block;
+			}
+		}
+
+		&-name {
+			position: relative;
+			z-index: 3;
+			margin: 0px 0px 0px 15px;
+			font-size: 32px;
+			font-weight: bold;
+			color: #ffffff;
+
+			span {
+				color: #e91212;
+			}
+		}
+	}
+
+	&__menu {
+
+	}
+
+	&__list {
+		display: flex;
+		position: relative;
+		z-index: 2;
+
+		li {
+			margin: 0px 0px 0px 40px;
+		}
+	}
+
+	&__link {
+		font-size: 16px;
+		font-weight: bold;
+		color: $color_font;
+		text-transform: uppercase;
+	}
+
+	&__burger {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+
+		&__container {
+			height: 50px;
+		}
+
+		&__logo {
+			
+			&-img {
+				flex: 0 0 40px;
+			}
+
+			&-name {
+				margin: 0px 0px 0px 5px;
+				font-size: 24px;
+			}
+		}
+
+		// ===== Burger-menu =====
+		&__burger {
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			position: relative;
+			z-index: 3;
+	
+			span {
+				background-color: $color_font;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				top: 9px;
+				transition: all 0.3s ease 0s;
+			}
+	
+			&::before, &::after {
+				content: '';
+				background-color: $color_font;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: all 0.3s ease 0s;
+			}
+	
+			&::before {
+				top: 0;
+			}
+			
+			&::after {
+				bottom: 0;
+			}
+
+			&.active {
+				
+				&::before {
+					transform: rotate(45deg);
+					top: 9px;
+				}
+
+				&::after {
+					transform: rotate(-45deg);
+					bottom: 9px;
+				}
+
+				span {
+					transform: scale(0);
+				}
+			}
+		}
+		// ===== /Burger-menu =====
+
+		&__menu {
+			position: fixed;
+			top: -100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: all 0.3s ease 0s;
+			background-color: #18b5a4;
+			padding: 70px 10px 0px 10px;
+			overflow: auto;
+
+			&.active {
+				top: 0;
+			}
+		}
+
+		&__list {
+			display: block;
+
+			li {
+				margin: 0px 0px 25px 0px;;
+			}
+		}
+
+		&__link {
+			
+		}
+	}
+}

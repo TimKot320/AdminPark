@@ -1,0 +1,35 @@
+body {
+	font-family: '', sans-serif;
+	color: $color_font;
+	background-color: $bg_color1;
+}
+
+// ===== Оболочка =====
+.wrapper {
+	overflow: hidden; //* чтоб ничего за экран не вылезло
+	
+	//* Прижимаем футер к низу grid
+	/*
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	*/
+	
+	//* Прижимаем футер к низу flex
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.grid {display: grid;}
+
+// ===== Контейнер =====
+.container {
+	max-width: 1090px;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+
+// ===== Основной контент =====
+.main {
+	padding: 80px 0px 0px 0px;
+}

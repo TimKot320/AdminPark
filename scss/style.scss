@@ -1,0 +1,29 @@
+// ======= Обнуление стилей =======
+@import "./null";
+// ======= Шрифты =======
+@import "./fonts/fonts";
+// ======= Переменные =======
+@import "./vars";
+// ======= Миксины =======
+@import "./mixin";
+
+// ======= Общие стили и служебные классы =======
+@import "./settings";
+
+// ======= Header (Шапка) =======
+@import "./components/header";
+
+// ======= Main (Основной контент) =======
+
+// ======= Section 1 - "Greeting (Приветствие)" =======
+@import "./components/greeting";
+// ======= Section 2 - "" =======
+@import "./components/section2";
+// ======= Section 3 - "Working (Дечтельность)" =======
+@import "./components/working";
+
+// ======= Footer (Подвал) =======
+@import "./components/footer";
+
+// ======= Медиа запросы =======
+@import "./media";

@@ -1,0 +1,30 @@
+.greeting {
+	background: url(../img/greeting/04.jpg) center/cover no-repeat;
+	
+	&__bg-opacity {
+		padding: 14% 0px 5% 0px;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	&__container {
+	}
+
+	&__banner {
+		width: 50%;
+	}
+
+	&__title {
+		color: $color_title;
+		font-size: 60px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__text {
+		color: $color_title;
+		font-size: 18px;
+		line-height: 140%;
+		margin: 0px 0px 40px 0px;
+	}
+}

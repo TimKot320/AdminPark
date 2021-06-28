@@ -1,0 +1,81 @@
+// ======= ПОДКЛЮЧАЕМ ШРИФТЫ =======
+
+// ======= Extra Light (Ultra Light) =======
+@font-face {
+	font-family: '';
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Light =======
+@font-face {
+	font-family: '';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Normal =======
+@font-face {
+	font-family: '';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Medium =======
+@font-face {
+	font-family: '';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Semi Bold (Demi Bold) =======
+@font-face {
+	font-family: '';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Bold =======
+@font-face {
+	font-family: '';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Extra Bold (Ultra Bold) =======
+@font-face {
+	font-family: '';
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
+
+// ======= Black (Heavy) =======
+@font-face {
+	font-family: '';
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/') format('woff2'), 
+		url('../fonts/') format('woff');
+}
