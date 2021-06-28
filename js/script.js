@@ -5,3 +5,11 @@ $(document).ready(function() {
 		$('body').toggleClass('lock');
 	});
 });
+
+// Слайдер partners__slider
+$(document).ready(function() {
+	$('.partners__slider').slick({
+		dots: true,
+		slidesToShow: 3,
+	});
+});
