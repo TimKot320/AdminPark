@@ -9,7 +9,9 @@ $(document).ready(function() {
 // Слайдер partners__slider
 $(document).ready(function() {
 	$('.partners__slider').slick({
+		arrows: false,
 		dots: true,
 		slidesToShow: 3,
+		autoplay: false
 	});
 });

@@ -1,19 +1,93 @@
 .footer {
 	background-color: #333;
 	margin-top: auto; //* прижимаем футер к низу для flexa
+	padding: 50px 0px;
 	
 	&__container {
-		height: 60px;
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 		justify-content: space-between;
-		align-items: center;
+	}
+
+	&__item {
+		align-items: flex-start;
+	}
+
+	// Логотип футера
+	&__logo {
+		align-self: flex-start;
+
+		&-link {
+			display: flex;
+			align-items: center;
+		}
+		
+		&-img {
+			flex: 0 0 60px;
+			border-radius: 100%;
+			overflow: hidden;
+
+			img {
+				max-width: 100%;
+				display: block;
+			}
+		}
+	
+		&-name {
+			margin: 0px 0px 0px 5px;
+			font-size: 36px;
+			font-weight: bold;
+			color: #ffffff;
+
+			span {
+				color: #e91212;
+			}
+		}
 	}
 
 	&__copy {
-		color: $color_title;
+		color: $bg_color1;
+		margin: 20px 0px 0px 0px;
+		
+		&-link {
+			color: $bg_color1;
+		}
 	}
 	
-	&__privat {
-		color: $color_title;
+	// Телефон
+	&__number {
+		text-align: center;
+		
+		&-icon {
+			width: 50px;
+		}
+		
+		&-text {
+			color: $bg_color1;
+		}
+	}
+	
+	// Адрес
+	&__address {
+		text-align: center;
+		
+		&-icon {
+			width: 50px;
+		}
+		
+		&-text {
+			color: $bg_color1;
+		}
+	}
+	
+	// Соц сети
+	&__social {
+		display: flex;
+		justify-content: flex-end;
+
+		img {
+			width: 30px;
+			margin: 0px 0px 0px 10px;
+		}
 	}
 }
