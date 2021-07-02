@@ -1,0 +1,50 @@
+.review {
+	padding: 50px 0px;
+
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__items {
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 30px 0px;
+		
+		&-img {
+			flex: 0 0 80px;
+			border-radius: 100%;
+			overflow: hidden;
+			margin: 0px 30px 0px 0px;
+
+			img {
+				max-width: 100%;
+				display: block;
+			}
+		}
+	
+		&-text {
+		}
+	}
+	
+	&__btn {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border: 2px solid #000;
+			border-bottom: 2px solid transparent;
+			border-left: 2px solid transparent;
+			transform: rotate(135deg);
+		}
+	}
+}
