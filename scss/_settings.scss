@@ -1,5 +1,5 @@
 body {
-	font-family: '', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: $color_font;
 	background-color: $bg_color1;
 }
@@ -32,4 +32,15 @@ body {
 // ===== Основной контент =====
 .main {
 	padding: 80px 0px 0px 0px;
+}
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	color: $color_font;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 120%;
+	margin: 0px 0px 30px 0px;
 }

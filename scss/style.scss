@@ -1,7 +1,7 @@
-// ======= Обнуление стилей =======
-@import "./null";
 // ======= Шрифты =======
 @import "./fonts/fonts";
+// ======= Обнуление стилей =======
+@import "./null";
 // ======= Переменные =======
 @import "./vars";
 // ======= Миксины =======
@@ -25,6 +25,9 @@
 @import "./components/partners";
 // ======= Section 5 - "gallery (Галерея работ)" =======
 @import "./components/gallery";
+// ======= Section 6 - "review (Отзывы)" =======
+@import "./components/review";
+
 
 
 

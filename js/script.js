@@ -12,6 +12,9 @@ $(document).ready(function() {
 		arrows: false,
 		dots: true,
 		slidesToShow: 3,
-		autoplay: false
+		speed: 1000,
+		easing: 'ease',
+		autoplay: true,
+		infinity: true
 	});
 });
