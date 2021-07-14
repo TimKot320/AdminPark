@@ -12,8 +12,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #76ace8;
-		// background-color: #2a92ce;
+		background-color: $blackBG;
 		z-index: 2;
 	}
 
@@ -47,12 +46,11 @@
 			z-index: 3;
 			margin: 0px 0px 0px 5px;
 			font-size: 32px;
-			font-weight: bold;
-			color: #ffffff;
-			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			color: $whiteFont;
 
 			span {
-				color: #e91212;
+				color: $redFont;
 			}
 		}
 	}
@@ -66,6 +64,7 @@
 		z-index: 2;
 
 		li {
+
 			margin: 0px 0px 0px 40px;
 			
 			> &:first-child {
@@ -81,14 +80,32 @@
 	&__link {
 		font-size: 16px;
 		font-weight: 500;
-		color: #dadada;
+		color: $greyFont;
 		text-transform: uppercase;
-		transition: color ease 0.3s;
+		transition: color 0.3s ease 0s;
 		white-space: nowrap;
+		position: relative;
+		padding: 0 5px;
+		
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			width: 0; // устанавливаем значение 0, чтобы ссылка изначально не подчёркивалась
+			height: 2px;
+			background: linear-gradient(to right,#f31455,#fe0201);
+			transition: width 0.3s ease;
+			margin: 5px 0px 0px 0px;
+		}
 		
 		&:hover {
-			color: #ffffff;
-			transition: color ease 0.3s;
+			color: $whiteFont;
+			transition: color 0.3s ease 0s;
+
+			&::after {
+				width: 100%; // устанавливаем значение 100% чтобы ссылка подчёркивалась полностью
+			}
 		}
 
 		@media (max-width: 922px) {
@@ -100,24 +117,17 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+	
+	body.lock {
+		overflow: hidden;
+	}
+
+	.main {
+		padding: 80px 0px 0px 0px;
+	}
+	
 	.header {
-
-		&__container {
-			height: 50px;
-		}
-
-		&__logo {
-			
-			&-img {
-				flex: 0 0 40px;
-			}
-
-			&-name {
-				margin: 0px 0px 0px 5px;
-				font-size: 24px;
-			}
-		}
 
 		// ===== Burger-menu =====
 		&__burger {
@@ -125,7 +135,6 @@
 			position: relative;
 			width: 35px;
 			height: 21px;
-			position: relative;
 			z-index: 3;
 	
 			span {
@@ -182,8 +191,8 @@
 			width: 100%;
 			height: 100%;
 			transition: all 0.3s ease 0s;
-			background-color: #18b5a4;
-			padding: 70px 10px 0px 10px;
+			background-color: $greyBG;
+			padding: 100px 10px 0px 10px;
 			overflow: auto;
 
 			&.active {
@@ -202,7 +211,7 @@
 
 		&__link {
 			font-size: 32px;
-			color: #ffffff;
+			color: $mainFont;
 		}
 	}
 }

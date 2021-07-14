@@ -1,7 +1,8 @@
 body {
-	font-family: 'Roboto', sans-serif;
-	color: $color_font;
-	background-color: $bg_color1;
+	font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+	font-weight: 300;
+	color: $mainFont;
+	background-color: $mainBG;
 }
 
 // ===== Оболочка =====
@@ -37,10 +38,26 @@ body {
 .title {
 	text-align: center;
 	text-transform: uppercase;
-	color: $color_font;
-	font-size: 24px;
-	font-weight: bold;
+	color: $mainFont;
+	font-size: 26px;
+	font-weight: 800;
 	letter-spacing: 1px;
 	line-height: 120%;
-	margin: 0px 0px 30px 0px;
+}
+
+.button {
+	padding: 15px 33px;
+	background: linear-gradient(to right,#f31455,#fe0201);
+	color: $whiteFont;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 25px;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		background: #e60021;
+		transition: all 0.3s ease 0s;
+	}
 }

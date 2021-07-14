@@ -1,5 +1,5 @@
 .footer {
-	background-color: #333;
+	background-color: $blackBG;
 	margin-top: auto; //* прижимаем футер к низу для flexa
 	padding: 50px 0px;
 	
@@ -36,22 +36,21 @@
 		&-name {
 			margin: 0px 0px 0px 5px;
 			font-size: 36px;
-			font-weight: bold;
-			color: #ffffff;
-			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			color: $whiteFont;
 
 			span {
-				color: #e91212;
+				color: $redFont;
 			}
 		}
 	}
 
 	&__copy {
-		color: $bg_color1;
+		color: $greyFont;
 		margin: 20px 0px 0px 0px;
 		
 		&-link {
-			color: $bg_color1;
+			color: $greyFont;
 		}
 	}
 	
@@ -64,10 +63,10 @@
 		}
 		
 		&-text {
-			color: $bg_color1;
+			color: $whiteFont;
 
 			a {
-				color: $bg_color1;
+				color: $whiteFont;
 			}
 		}
 	}
@@ -81,7 +80,7 @@
 		}
 		
 		&-text {
-			color: $bg_color1;
+			color: $whiteFont;
 		}
 	}
 	

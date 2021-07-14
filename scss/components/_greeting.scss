@@ -3,7 +3,7 @@
 	
 	&__bg-opacity {
 		padding: 14% 0px 5% 0px;
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(0, 0, 0, 0.2);
 	}
 
 	&__container {
@@ -23,7 +23,7 @@
 	}
 
 	&__title {
-		color: $color_title;
+		color: $whiteFont;
 		font-size: 60px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -41,7 +41,7 @@
 	}
 
 	&__text {
-		color: $color_title;
+		color: $whiteFont;
 		font-size: 18px;
 		line-height: 140%;
 		margin: 0px 0px 40px 0px;

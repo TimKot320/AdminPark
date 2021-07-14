@@ -6,6 +6,12 @@ $(document).ready(function() {
 	});
 });
 
+// $(document).ready(function() {
+// 	$('.review__btn').click(function(event) {
+// 		$('.review__item').toggleClass('active');
+// 	});
+// });
+
 // Слайдер partners__slider
 $(document).ready(function() {
 	$('.partners__slider').slick({

@@ -10,13 +10,7 @@
 	}
 
 	&__title {
-		text-align: center;
 		margin: 0px 0px 50px 0px;
-		color: $color_btn;
-		font-size: 28px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 1px;
 
 		@media (max-width: 767px) {
 			font-size: 24px;
@@ -43,7 +37,7 @@
 				&.slick-active {
 
 					button {
-						background-color: $color_btn;
+						background: linear-gradient(to right,#f31455,#fe0201);
 						width: 12px;
 						height: 12px;
 					}
@@ -65,6 +59,7 @@
 		max-width: 300px;
 		text-align: center;
 		margin: 0px 10px;
+		overflow: hidden;
 		
 		img {
 			width: 100%;
